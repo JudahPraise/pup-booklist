@@ -1,0 +1,181 @@
+:root{
+    --body-bg: rgb(204, 204 ,204 );
+    --white: #ffffff;
+    --darkWhite: #ccc;
+    --dark:#615c60;
+    --black:#000;
+    --themeColor:maroon;
+    --pageShadow:0 0 0.5cm rgba(0, 0, 0, 0.5cm);
+/* Font Includes*/
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+}
+body{
+    background-color: var(--body-bg) ;
+}
+
+.page{
+    background: var(--white);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--pageShadow);
+
+}
+.page{
+    width: 8.3in;
+    height: 11.7in;
+    overflow: hidden;
+}
+
+.bb{
+    border-bottom: 1pt solid var(--darkWhite);
+}
+.top-content{
+    padding-bottom: 5;
+}
+.logo img{
+    height: 60px;
+}
+.top-left p{
+    margin: 0;
+}
+.top-left .graphic-path{
+    height: 40px;
+    position: relative; 
+}
+.top-left .graphic-path::before{
+    content: "";
+    height: 20px;
+    background-color: var(--dark);
+    position: absolute;
+    left: 15px;
+    right: 0;
+    top: -15px;
+    z-index: 2;
+}
+.top-left .graphic-path::after{
+    content: "";
+    height: 22px;
+    width: 17px;
+    background: var(--black);
+    position: absolute;
+    top: -13px;
+    left: 6px;
+    transform: rotate(45deg);
+}
+.top-left .graphic-path p{
+    color: var(--white);
+    height: 40px;
+    left: 0;
+    right: -100px;
+    text-transform: uppercase;
+    background-color: var(--themeColor);
+    font: 26px;
+    z-index: 3;
+    position: absolute;
+}
+
+/*User Store Section*/
+
+.store-user{
+    padding-bottom: 20;
+}
+.store-user p{
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: var(--themeColor);
+    font-family: 'Rajdhani',sans-serif;
+}
+.extra-info p span{
+    
+    font-weight: 400;
+
+}
+/*Product Section*/
+
+thead{
+    color: var(--white);
+    background: var(--themeColor);
+}
+.table td,
+.table th{
+    text-align: center;
+    vertical-align: middle;
+}
+tr th :first-child,
+tr td :first-child{
+    text-align: left;
+}
+.media img{
+    height: 60px;
+    width: 60px;
+}
+.media p{
+    font-weight: 400;
+    margin: 0;
+}
+.media p.title{
+    font-weight: 600;
+}
+
+/*Balance Info Section*/
+.balance-info .table td,
+.balance-info .table th{
+    padding: 0;
+    border: 0;
+    
+}
+.balance-info tr td :first-child{
+    font-weight: 600;
+}
+tfoot{
+    margin-bottom: 20px;
+    border-top: 2px solid var(--darkWhite);
+}
+tfoot td{
+    font-weight: 600;
+    
+}
+/*Books BG*/
+.books-bg{
+    position: absolute;
+    height: 50px;
+    bottom: 107px;
+    left: 80px;
+
+}
+/* Signature*/
+
+.col-12{
+    margin-top: 10px;
+}
+
+/*Footer Section*/
+
+footer{
+    
+    text-align: center;
+    background: var(--white);
+
+
+}
+footer hr{
+    margin-bottom: -20px;
+    border-top: 3px solid var(--darkWhite);
+}
+footer a{
+    color: var(--themeColor);
+}
+footer p{
+    
+    padding: 6px;
+    border: 3px solid var(--darkWhite);
+    background-color: var(--white);
+    display: inline-block;
+}
+
+.button{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
