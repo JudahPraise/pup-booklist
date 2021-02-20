@@ -30,7 +30,7 @@
               <td>{{ $forBsit->year_published->format('Y') }}</td>
               <td>{{ $forBsit->area_section }}</td>
               <td>
-                  <a href="#" class="btn text-white" style="background-color: #1265B8">View Profile</a>
+                  <a href="{{ route('book.show', $forBsit->id ) }}" class="btn text-white" style="background-color: #1265B8">Show Book</a>
               </td>
             </tr>
           @empty

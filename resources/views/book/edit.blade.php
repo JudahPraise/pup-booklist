@@ -1,10 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2>Edit Book Details</h2>
-<form action="{{ route('book.update', $book->id )}}" method="post">
+
+<form action="{{ route('book.update', $book->id )}}" class="p-5" method="post">
 @csrf
 @method('PUT')
+<h2>Edit Book Details</h2>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom01">Book Title</label>
@@ -100,6 +101,7 @@
         <option>BSIT</option>
         <option>BSENT</option>
         <option>BBTLE</option>
+        <option>All Courses</option>
       </select>
       <div class="invalid-feedback">
         Please select a valid state.

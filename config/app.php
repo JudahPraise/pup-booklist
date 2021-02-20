@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'PUP|Library'),
+    'name' => env('APP_NAME', 'PUPCC|Library'),
 
     /*
     |--------------------------------------------------------------------------

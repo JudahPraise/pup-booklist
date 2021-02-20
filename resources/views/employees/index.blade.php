@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <h1 class="h3 mb-4 text-gray-800">Employees List</h1>
+    <h1 class="h3 mb-4 text-gray-800 p-5">Employees List</h1>
     <div class="row">
         <div class="col-12">
             <div class="table-responsive">

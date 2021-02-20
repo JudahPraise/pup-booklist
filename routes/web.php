@@ -21,8 +21,8 @@ Route::prefix('book')->group(function(){
     Route::get('/', 'BookController@index')->name('book.index');
     Route::get('/create', 'BookController@create')->name('book.create');
     Route::post('/store', 'BookController@store')->name('book.store');
-    Route::get('/show{id}', 'BookController@show')->name('book.show');
-    Route::get('/edit{id}', 'BookController@edit')->name('book.edit');
+    Route::get('/show/{id}', 'BookController@show')->name('book.show');
+    Route::get('/edit/{id}', 'BookController@edit')->name('book.edit');
     Route::put('/update/{id}', 'BookController@update')->name('book.update');
 
 });
@@ -46,6 +46,7 @@ Route::prefix('/recommendation')->group(function(){
     Route::get('/bsit', 'RecommendationController@filterBsit')->name('recommendation.bsit');
     Route::get('/bsent', 'RecommendationController@filterBsent')->name('recommendation.bsent');
     Route::get('/bbtle', 'RecommendationController@filterBbtle')->name('recommendation.bbtle');
+    Route::get('/all', 'RecommendationController@filterAll')->name('recommendation.all');
 });
 
 Route::get('/archive/{id}', 'ArchiveController@archive')->name('archive');
@@ -57,3 +58,7 @@ Route::get('/retrieve/archive/{id}', 'ArchiveController@retrieve')->name('retrie
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home-page', function(){
+    return view('home-page');
+})->name('home.page');

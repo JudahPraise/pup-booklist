@@ -12,9 +12,11 @@ class RecommendationController extends Controller
         $countBsitBooks = Book::where('recommendation','LIKE','BSIT')->count();
         $countBsentBooks = Book::where('recommendation','LIKE','BSENT')->count();
         $countBbtleBooks = Book::where('recommendation','LIKE','BBTLE')->count();
+        $countAllBooks = Book::where('recommendation','LIKE','All Courses')->count();
         return view('recommendation.filter-bsit')->with('countBsitBooks', $countBsitBooks)
                                             ->with('countBsentBooks', $countBsentBooks)
-                                            ->with('countBbtleBooks', $countBbtleBooks);
+                                            ->with('countBbtleBooks', $countBbtleBooks)
+                                            ->with('countAllBooks', $countAllBooks);
     }
 
     public function filterBsit(){
@@ -23,10 +25,12 @@ class RecommendationController extends Controller
         $countBsitBooks = Book::where('recommendation','LIKE','BSIT')->count();
         $countBsentBooks = Book::where('recommendation','LIKE','BSENT')->count();
         $countBbtleBooks = Book::where('recommendation','LIKE','BBTLE')->count();
+        $countAllBooks = Book::where('recommendation','LIKE','All Courses')->count();
         return view('recommendation.filter-bsit')->with('bsitBooks', $bsitBooks)
         ->with('countBsitBooks', $countBsitBooks)
         ->with('countBsentBooks', $countBsentBooks)
-        ->with('countBbtleBooks', $countBbtleBooks);
+        ->with('countBbtleBooks', $countBbtleBooks)
+        ->with('countAllBooks', $countAllBooks);
 
     }
 
@@ -36,10 +40,12 @@ class RecommendationController extends Controller
         $countBsitBooks = Book::where('recommendation','LIKE','BSIT')->count();
         $countBsentBooks = Book::where('recommendation','LIKE','BSENT')->count();
         $countBbtleBooks = Book::where('recommendation','LIKE','BBTLE')->count();
+        $countAllBooks = Book::where('recommendation','LIKE','All Courses')->count();
         return view('recommendation.filter-bsent')->with('bsentBooks', $bsentBooks)
         ->with('countBsitBooks', $countBsitBooks)
         ->with('countBsentBooks', $countBsentBooks)
-        ->with('countBbtleBooks', $countBbtleBooks);
+        ->with('countBbtleBooks', $countBbtleBooks)
+        ->with('countAllBooks', $countAllBooks);
 
     }
 
@@ -49,10 +55,28 @@ class RecommendationController extends Controller
         $countBsitBooks = Book::where('recommendation','LIKE','BSIT')->count();
         $countBsentBooks = Book::where('recommendation','LIKE','BSENT')->count();
         $countBbtleBooks = Book::where('recommendation','LIKE','BBTLE')->count();
+        $countAllBooks = Book::where('recommendation','LIKE','All Courses')->count();
         return view('recommendation.filter-bbtle')->with('bbtleBooks', $bbtleBooks)
         ->with('countBsitBooks', $countBsitBooks)
         ->with('countBsentBooks', $countBsentBooks)
-        ->with('countBbtleBooks', $countBbtleBooks);
+        ->with('countBbtleBooks', $countBbtleBooks)
+        ->with('countAllBooks', $countAllBooks);
+
+    }
+
+    public function filterAll(){
+
+        $allBooks = Book::where('recommendation','LIKE','All Courses')->get();
+        $countBsitBooks = Book::where('recommendation','LIKE','BSIT')->count();
+        $countBsentBooks = Book::where('recommendation','LIKE','BSENT')->count();
+        $countBbtleBooks = Book::where('recommendation','LIKE','BBTLE')->count();
+        $countAllBooks = Book::where('recommendation','LIKE','All Courses')->count();
+        return view('recommendation.filter-all')->with('allBooks', $allBooks)
+        ->with('countBsitBooks', $countBsitBooks)
+        ->with('countBsentBooks', $countBsentBooks)
+        ->with('countBbtleBooks', $countBbtleBooks)
+        ->with('countAllBooks', $countAllBooks);
 
     }
 }
+

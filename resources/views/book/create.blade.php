@@ -2,9 +2,10 @@
 
 @section('content')
   
-<h2>Add Book</h2>
 
-<form class="needs-validation" action="{{ route('book.store')}}" method="post" novalidate>
+
+<form class="needs-validation p-5" action="{{ route('book.store')}}" method="post" novalidate>
+  <h2>Add Book</h2>
   @csrf
   <div class="form-row">
     <div class="col-md-6 mb-3">
@@ -101,6 +102,7 @@
         <option>BSIT</option>
         <option>BSENT</option>
         <option>BBTLE</option>
+        <option>All Courses</option>
       </select>
       <div class="invalid-feedback">
         Please select a valid state.

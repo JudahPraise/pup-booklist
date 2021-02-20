@@ -33,7 +33,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid mt-5">
+                <div class="container-fluid m-0 p-0">
                     @yield('content')
                 </div>
                 <!-- /.container-fluid -->

@@ -97,6 +97,7 @@ class BookController extends Controller
         $book->description=$request->input('description');
         $book->copies=$request->input('copies');
         $book->book_type=$request->input('book_type');
+        $book->recommendation=$request->input('recommendation');
 
         $book->save();
 

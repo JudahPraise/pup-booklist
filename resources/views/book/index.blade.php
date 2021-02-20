@@ -8,7 +8,7 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
-<div class="row w-100 d-flex justify-content-center">
+<div class="row w-100 d-flex justify-content-center p-4">
 
   <div class="col-lg-7 order-sm-5 w-100 d-flex flex-column justify-content-center ml-5" >
     <h1>PUP Library System</h1>
@@ -22,8 +22,10 @@
 
 
 </div>
-<h2 class="mt-5">Book List</h2>
-<div class="table-responsive">
+
+
+<div class="table-responsive p-5">
+  <h2 class="mt-5">Book List</h2>
   <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
     <thead>
     <tr>

@@ -7,9 +7,9 @@
 @section('filter')
 
 
+
 <div class="table-responsive p-5">
-  
-<h1>BBTLE</h1>
+  <h1>All</h1>
     <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
         <thead>
           <tr>
@@ -23,15 +23,15 @@
         </thead>
 
         <tbody>
-          @forelse($bbtleBooks as $forBbtle)
+          @forelse($allBooks as $forAll)
             <tr>
-              <td>{{ $forBbtle->id   }}</td>
-              <td>{{ $forBbtle->book_title }}</td>
-              <td>{{ $forBbtle->author }}</td>
-              <td>{{ $forBbtle->year_published->format('Y') }}</td>
-              <td>{{ $forBbtle->area_section }}</td>
+              <td>{{ $forAll->id   }}</td>
+              <td>{{ $forAll->book_title }}</td>
+              <td>{{ $forAll->author }}</td>
+              <td>{{ $forAll->year_published->format('Y') }}</td>
+              <td>{{ $forAll->area_section }}</td>
               <td>
-                  <a href="{{ route('book.show', $forBbtle->id ) }}" class="btn text-white" style="background-color: #1265B8">Show Book</a>
+                  <a href="{{ route('book.show', $forAll->id ) }}" class="btn text-white" style="background-color: #1265B8">Show Book</a>
               </td>
             </tr>
           @empty

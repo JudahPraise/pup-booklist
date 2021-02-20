@@ -1,0 +1,13 @@
+.background{
+    margin-bottom: 0!important;
+    padding: 0!important;
+    min-height: 100vh!important;
+    min-width: 100%!important;
+    background-image: url('../image/background.jpg')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;   
+    /* position: fixed; */
+}
