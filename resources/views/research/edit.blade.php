@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="row w-100">
+    <div class="row w-100 p-4">
 
       <div class="col-lg-12">
         <h2>Update Research Paper</h2>

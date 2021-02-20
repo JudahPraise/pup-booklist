@@ -1,9 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2>Add Research Paper</h2>
-<form action="{{ route('research.store')}}" method="post" class="needs-validation" novalidate>
+
+<form action="{{ route('research.store')}}" method="post" class="needs-validation p-4" novalidate>
 @csrf
+<h2>Add Research Paper</h2>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom01">Year</label>

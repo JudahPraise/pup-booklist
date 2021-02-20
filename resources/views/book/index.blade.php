@@ -10,7 +10,7 @@
 
 <div class="row w-100 d-flex justify-content-center p-4">
 
-  <div class="col-lg-7 order-sm-5 w-100 d-flex flex-column justify-content-center ml-5" >
+  <div class="col-lg-7 order-sm-5 w-100 d-flex flex-column justify-content-center ml-5">
     <h1>PUP Library System</h1>
     <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h5>
   </div>
@@ -19,12 +19,10 @@
     <lottie-player src="{{ asset('animation/reading.json') }}" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
   </div>
 
-
-
 </div>
 
 
-<div class="table-responsive p-5">
+<div class="table-responsive p-4">
   <h2 class="mt-5">Book List</h2>
   <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
     <thead>

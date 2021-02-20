@@ -1,5 +1,5 @@
  
-<div class="row w-100 d-flex flex-column p-5">
+<div class="row w-100 d-flex flex-column pl-5 pt-4 pr-4">
     <h5 class="font-italic text-success">*Click the cards to view books</h5>   
     <div class="row 100">
         <div class="col-xl-3 col-md-6 mb-4 align-self-start">

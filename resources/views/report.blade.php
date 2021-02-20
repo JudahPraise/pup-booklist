@@ -21,7 +21,7 @@
       
     <div id="paper" class="page p-5 d-flex flex-column align-content-center">
         
-            <section class="top-content bb d-flex justify-content-between">
+            <section class="top-content d-flex justify-content-between">
                 <div class="logo"><img src="image/pup.png" alt="" class="img-fluid">
                     
                 </div>

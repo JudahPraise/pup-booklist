@@ -6,9 +6,7 @@
 
 @section('filter')
 
-
-
-<div class="table-responsive p-5">
+<div class="table-responsive p-4">
   <h1>All</h1>
     <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
         <thead>
@@ -28,7 +26,7 @@
               <td>{{ $forAll->id   }}</td>
               <td>{{ $forAll->book_title }}</td>
               <td>{{ $forAll->author }}</td>
-              <td>{{ $forAll->year_published->format('Y') }}</td>
+              <td>{{ \Carbon\Carbon::parse($forAll->year_published)->format('Y')}}</td>
               <td>{{ $forAll->area_section }}</td>
               <td>
                   <a href="{{ route('book.show', $forAll->id ) }}" class="btn text-white" style="background-color: #1265B8">Show Book</a>

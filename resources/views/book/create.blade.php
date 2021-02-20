@@ -4,7 +4,7 @@
   
 
 
-<form class="needs-validation p-5" action="{{ route('book.store')}}" method="post" novalidate>
+<form class="needs-validation p-4" action="{{ route('book.store')}}" method="post" novalidate>
   <h2>Add Book</h2>
   @csrf
   <div class="form-row">

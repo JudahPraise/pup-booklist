@@ -4,11 +4,9 @@
     <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 @endsection
 
-
 @section('content')
-
-<h2>Research Papers List</h2>
-<div class="table-responsive">
+<div class="table-responsive p-4">
+  <h2>Research Papers List</h2>
   <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
     <thead>
       <tr>

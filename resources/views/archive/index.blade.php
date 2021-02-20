@@ -6,8 +6,9 @@
 
 @section('content')
 
-  <h2 class="mt-5">Archive Books</h2>
-  <div class="table-responsive">
+  
+  <div class="table-responsive p-4">
+    <h2 class="mt-5">Archive Books</h2>
     <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
       <thead>
       <tr>

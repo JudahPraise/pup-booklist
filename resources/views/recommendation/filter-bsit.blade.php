@@ -6,9 +6,8 @@
 
 @section('filter')
 
-<h1>BSIT</h1>
-
-<div class="table-responsive">
+<div class="table-responsive p-4">
+  <h1>BSIT</h1>
     <table class="table table-striped table-bordered dt-responsive wrap" style="width:100%" id="table_id">
         <thead>
           <tr>
@@ -27,7 +26,7 @@
               <td>{{ $forBsit->id   }}</td>
               <td>{{ $forBsit->book_title }}</td>
               <td>{{ $forBsit->author }}</td>
-              <td>{{ $forBsit->year_published->format('Y') }}</td>
+              <td>{{ \Carbon\Carbon::parse($forBsit->year_published)->format('Y') }}</td>
               <td>{{ $forBsit->area_section }}</td>
               <td>
                   <a href="{{ route('book.show', $forBsit->id ) }}" class="btn text-white" style="background-color: #1265B8">Show Book</a>

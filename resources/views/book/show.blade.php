@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="p-5">
+<div class="p-4">
     <h3>Book Details</h3>
     <p>-----------------------------------------------------------------------</p>
     <p>Book Title: {{ $book->book_title }}</p>

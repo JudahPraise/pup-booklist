@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="{{ route('book.update', $book->id )}}" class="p-5" method="post">
+<form action="{{ route('book.update', $book->id )}}" class="p-4" method="post">
 @csrf
 @method('PUT')
 <h2>Edit Book Details</h2>
